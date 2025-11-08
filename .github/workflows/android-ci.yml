@@ -43,8 +43,9 @@ jobs:
 
       # 3. Sets up Gradle and enables caching for dependencies and build outputs
       # This step significantly speeds up your builds
+      # --- THIS IS THE CORRECTED LINE ---
       - name: Setup Gradle
-        uses: actions/setup-gradle@v3
+        uses: gradle/setup-gradle@v3
         with:
           # This will cache wrapper files and build-scans data
           gradle-home-cache-cleanup: true
